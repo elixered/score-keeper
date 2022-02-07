@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  color: #274472;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(240, 240, 240);
+}
+
+.container img {
+  width: 296px;
+  height: 150px;
+  border: 2px solid rgb(240, 240, 240);
+}
+
+.image h3 {
+  background-color: white;
+  padding: 4px 4px;
+  border: 2px solid rgb(240, 240, 240);
+}
+
+.score {
+  width: 288px;
+  padding: 4px 4px;
+  border: 2px solid rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+}
+
+.choose h2 {
+  display: inline-block;
+}
+
+.buttons {
+  background-color: rgb(240, 240, 240);
+  font-size: 0px;
+  border: none;
+}
+
+.player1,
+.player2,
+.reset {
+  height: 40px;
+  width: 100px;
+  border: none;
+  transition: all 0.2s ease;
+  color: white;
+}
+.player1:active,
+.player2:active,
+.reset:active {
+  transform: scale(0.95);
+  border: 0px;
+}
+
+.player1 {
+  border-top-left-radius: 10px;
+  background-color: green;
+}
+
+.player2 {
+  background-color: blue;
+}
+.choose {
+  display: flex;
+  align-items: center;
+}
+
+.reset {
+  border-top-right-radius: 10px;
+  background-color: red;
+}
+
+span {
+  color: #274472;
+}
+
+select {
+  border: 2px solid grey;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
